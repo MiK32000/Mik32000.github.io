@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classes & Progress — Michael J. Yax</title>
+<meta name="description" content="Coursework, grades, and degree progress for Michael J. Yax at Monmouth University.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f6b3c'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Segoe UI,Arial' font-weight='700' fill='white' text-anchor='middle'%3EMY%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <span class="mono">MY</span>
+      Michael J. Yax
+    </a>
+    <button class="navtoggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="classes.html" class="active">Classes &amp; Progress</a>
+      <a href="mailto:myax7295@gmail.com">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Classes &amp; Academic Progress</h1>
+    <p class="lead">Degree progress and coursework for my dual degree in Computer Science (Data Science minor) and Mathematics (Statistics concentration) at Monmouth University. Figures below are pulled from my degree audit.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="verify-banner">
+      ⓘ Program completion must be verified by the Registrar. Figures below reflect my degree audit as of the most recent term and are subject to official confirmation.
+    </div>
+
+    <h2>Degree Progress Overview</h2>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="num">3.729</div>
+        <div class="lab">Cumulative GPA</div>
+        <div class="sub">2.000 minimum required</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">74</div>
+        <div class="lab">Credits Earned</div>
+        <div class="sub">of 120 minimum required</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">70</div>
+        <div class="lab">Credits from Monmouth</div>
+        <div class="sub">30 minimum required — met ✓</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">36</div>
+        <div class="lab">Credits In Progress</div>
+        <div class="sub">enrolled, not yet graded</div>
+      </div>
+    </div>
+
+    <div class="progress-block">
+      <div class="plabel">
+        <span class="name">Total Credits</span>
+        <span class="stat">74 earned + 36 in progress of 120 required</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-seg earned" data-target="61.7" style="width:0"></div>
+        <div class="progress-seg inprogress" data-target="30" style="width:0"></div>
+        <div class="progress-seg needed" data-target="8.3" style="width:0"></div>
+      </div>
+    </div>
+
+    <div class="progress-block">
+      <div class="plabel">
+        <span class="name">Credits from Monmouth University</span>
+        <span class="stat">70 earned + 36 in progress — 30 min. required</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-seg earned" data-target="50" style="width:0"></div>
+        <div class="progress-seg inprogress" data-target="25.7" style="width:0"></div>
+        <div class="progress-seg needed" data-target="24.3" style="width:0"></div>
+      </div>
+    </div>
+
+    <div class="legend">
+      <span class="earned"><span class="dot"></span>Earned</span>
+      <span class="inprogress"><span class="dot"></span>In Progress</span>
+      <span class="needed"><span class="dot"></span>Planned / Remaining</span>
+    </div>
+
+    <h2 style="margin-top:36px;">Programs</h2>
+    <div class="program-card">
+      <div class="row-top">
+        <span class="pname">BS Computer Science, Data Science Minor</span>
+        <span class="pgpa">GPA 3.729</span>
+      </div>
+      <div class="met">✓ GPA requirement met (2.000 minimum)</div>
+    </div>
+    <div class="program-card">
+      <div class="row-top">
+        <span class="pname">BS Mathematics — Concentration in Statistics</span>
+        <span class="pgpa">GPA 3.729</span>
+      </div>
+      <div class="met">✓ GPA requirement met (2.000 minimum)</div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Coursework by Semester</h2>
+    <p class="note">Grades shown are final grades for completed terms. Fall 2026 and Spring 2027 are current/planned enrollment — grades post once terms are graded.</p>
+
+    <div class="term-grid" id="termGrid">
+
+      <div class="term-card">
+        <div class="term-head">
+          <span class="term-name">Fall 2024</span><span class="term-status done">Completed</span>
+          <div class="term-meta">GPA 3.700 · 17 credits</div>
+        </div>
+        <ul class="course-list">
+          <li class="course-item"><div class="cinfo"><span class="ccode">CS-104</span><span class="cname">Intro Problem Solving · 3 cr</span></div><span class="grade">A-</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">ED-101</span><span class="cname">Transition to College · 1 cr</span></div><span class="grade pass">P</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">EN-101</span><span class="cname">College Composition I · 3 cr</span></div><span class="grade">A</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">GO-125</span><span class="cname">Maps and Mapping · 3 cr</span></div><span class="grade b">B</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">HS-284</span><span class="cname">Modern East Asia · 3 cr</span></div><span class="grade">A-</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">MA-125</span><span class="cname">Calc &amp; Analytic Geometry 1 · 4 cr</span></div><span class="grade">A</span></li>
+        </ul>
+      </div>
+
+      <div class="term-card">
+        <div class="term-head">
+          <span class="term-name">Spring 2025</span><span class="term-status done">Completed</span>
+          <div class="term-meta">GPA 3.606 · 17 credits</div>
+        </div>
+        <ul class="course-list">
+          <li class="course-item"><div class="cinfo"><span class="ccode">CS-176</span><span class="cname">Intro Computer Science II · 3 cr</span></div></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">CS-176L</span><span class="cname">Intro Comp Sci II Lab · 1 cr</span></div><span class="grade">A</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">EN-102</span><span class="cname">College Composition II · 3 cr</span></div><span class="grade b">B</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">FS-LAB-300BA</span><span class="cname">Conversation Practice · 0 cr, P/F</span></div><span class="grade pass">P</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">FS-300B</span><span class="cname">Adv. Spanish: Comp Conv II · 3 cr</span></div><span class="grade">A-</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">MA-126</span><span class="cname">Calc &amp; Analytic Geometry II · 4 cr</span></div><span class="grade">B+</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">MA-130</span><span class="cname">Applied Discrete Math · 3 cr</span></div><span class="grade">A</span></li>
+        </ul>
+      </div>
+
+      <div class="term-card">
+        <div class="term-head">
+          <span class="term-name">Fall 2025</span><span class="term-status done">Completed</span>
+          <div class="term-meta">GPA 3.550 · 16 credits</div>
+        </div>
+        <ul class="course-list">
+          <li class="course-item"><div class="cinfo"><span class="ccode">EN-201</span><span class="cname">Literature I · 3 cr</span></div><span class="grade">A-</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">HS-110</span><span class="cname">Historical Studies · 3 cr</span></div><span class="grade b">B</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">MA-220</span><span class="cname">Probability &amp; Stats I · 3 cr</span></div><span class="grade">A</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">MA-221</span><span class="cname">Linear Algebra · 3 cr</span></div><span class="grade">A-</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">PH-211</span><span class="cname">Gen. Physics w/Calc I · 3 cr</span></div><span class="grade">B+</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">PH-211L</span><span class="cname">Gen. Physics w/Calc I Lab · 1 cr</span></div><span class="grade">A-</span></li>
+        </ul>
+      </div>
+
+      <div class="term-card">
+        <div class="term-head">
+          <span class="term-name">Spring 2026</span><span class="term-status done">Completed</span>
+          <div class="term-meta">GPA 4.000 · 17 credits</div>
+        </div>
+        <ul class="course-list">
+          <li class="course-item"><div class="cinfo"><span class="ccode">CS-205</span><span class="cname">Data Structures &amp; Algorithms · 3 cr</span></div><span class="grade">A</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">CS-205L</span><span class="cname">Data Struct &amp; Algor Lab · 1 cr</span></div><span class="grade">A</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">CS-286</span><span class="cname">Computer Architecture 1 · 3 cr</span></div><span class="grade">A</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">MA-225</span><span class="cname">Calc w/ Analytic Geometry 3 · 4 cr</span></div><span class="grade">A</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">MA-321</span><span class="cname">Statistical Consulting · 3 cr</span></div><span class="grade">A</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">MA-350</span><span class="cname">Computing and Statistics · 3 cr</span></div><span class="grade">A</span></li>
+        </ul>
+      </div>
+
+      <div class="term-card">
+        <div class="term-head">
+          <span class="term-name">Fall 2026</span><span class="term-status progress">In Progress</span>
+          <div class="term-meta">18 enrolled credits</div>
+        </div>
+        <ul class="course-list">
+          <li class="course-item"><div class="cinfo"><span class="ccode">CS-215</span><span class="cname">AI Literacy · 3 cr</span></div><span class="grade enrolled">✓</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">CS-305</span><span class="cname">Advanced Computing · 3 cr</span></div><span class="grade enrolled">✓</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">CS-357</span><span class="cname">Eng. Full-Stack Software App · 3 cr</span></div><span class="grade enrolled">✓</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">CS-432</span><span class="cname">Database Systems · 3 cr</span></div><span class="grade enrolled">✓</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">DS-317</span><span class="cname">Ethics &amp; Bias in CS &amp; AI · 3 cr</span></div><span class="grade enrolled">✓</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">MA-320</span><span class="cname">Probability &amp; Stats II · 3 cr</span></div><span class="grade enrolled">✓</span></li>
+        </ul>
+      </div>
+
+      <div class="term-card">
+        <div class="term-head">
+          <span class="term-name">Spring 2027</span><span class="term-status planned">Planned</span>
+          <div class="term-meta">18 enrolled credits</div>
+        </div>
+        <ul class="course-list">
+          <li class="course-item"><div class="cinfo"><span class="ccode">CS-310</span><span class="cname">Adv. Object Oriented Prog Design · 3 cr</span></div><span class="grade enrolled">✓</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">CS-325</span><span class="cname">Software Eng. Concepts · 3 cr</span></div><span class="grade enrolled">✓</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">CS-414</span><span class="cname">Computer Networks · 3 cr</span></div><span class="grade enrolled">✓</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">CS-438</span><span class="cname">Operating Systems Analysis · 3 cr</span></div><span class="grade enrolled">✓</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">DS-310</span><span class="cname">Intro Applied AI Using LCNC · 3 cr</span></div><span class="grade enrolled">✓</span></li>
+          <li class="course-item"><div class="cinfo"><span class="ccode">PR-432</span><span class="cname">Ethics for Professional Sci/Eng · 3 cr</span></div><span class="grade enrolled">✓</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div>© <span id="year"></span> Michael J. Yax. Built with HTML &amp; CSS, hosted on GitHub Pages.</div>
+    <div class="flinks">
+      <a href="mailto:myax7295@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/myax/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/MiK32000" target="_blank" rel="noopener">GitHub</a>
+      <a href="index.html">Home</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
